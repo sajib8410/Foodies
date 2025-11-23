@@ -1,0 +1,42 @@
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 60px;
+background: #ffffff;
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 30px;
+}
+
+.parent {
+    width: 375px;
+    height: 10593px;
+    left: -259px;
+    border: 5ps solid black;
+    margin: 0 auto;
+    
+}
+hero {
+    font-family: inter;
+    font-weight: 600;
+    font-style: semi-bold;
+    font-size: 51px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #1d1d1f;
+
+}
+button {
+    width: 200px;
+    height: 67.9px;
+    top: 463.33px;
+    left: 135px;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #06c167;
+
+}
