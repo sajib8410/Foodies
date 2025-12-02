@@ -1,88 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodies</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-    <!--Header Section Start-->
-    <div class="header-area">
-        <header class="header">
-            <div class="logo">
-                <img src="./images/Logo.png" alt="">
-            </div>
-            <nav class="navigation">
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Home</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="menu-link">About Us</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="menu-link">Service Us</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="menu-link">Our Company</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="menu-link">Pages</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <!--Header Section End-->
-    <!-- Hero Section Start -->
-     <div class="hero-area">
-        <section class="hero">
-            <h1>We're Serious For Food.</h1>
-            <p>We strive to provide a space where guests can connect with themselves and explore their full potential, offering a safe place.</p>
-            <button>
-                <h3>Get Started</h3>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero-bg">
+      <header class="header">
+        <div class="container header-inner">
+          <div class="logo">
+            <img src="./images/Logo.png" alt="Foodies Logo" />
+          </div>
+
+          <nav class="navigation">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="#" class="menu-link active">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">About Us</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Service Us</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Our Company</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Pages</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="nav-toggle" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1 class="hero-title">We're Serious For Food.</h1>
+            <p class="hero-text">
+              We strive to provide a space where guests can connect with
+              themselves and explore their full potential, offering a safe
+              place.
+            </p>
+            <button class="btn-primary">
+              Get Started
+              <span class="btn-icon"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></span>
             </button>
-            <div class="hero-image">
-                <img src="./images/hero_image.png" alt="Hero Image">
+          </div>
+
+          <div class="hero-image">
+            <div class="hero-image-inner">
+              <img src="./images/hero_image.png" alt="Cooking in the kitchen" />
             </div>
-        </section>
-     </div>
-     <!-- Hero Section End -->
+          </div>
+        </div>
+      </section>
+    </div>
 
-     <!-- Brand Logo Section -->
-      <div class="brand-logo">
-        <img src="./images/Brand Logo.png" alt="Brand Logo">
-
+    <section class="brands">
+      <div class="container brands-inner">
+        <img src="./images/Brand Logo.png" alt="Brand Logos" />
       </div>
-      
-      <!-- Features Section Start -->
-       <section class="features">
-            <div class="feature-card">
-                <img src="./images/shippingIcon.png" alt="Shipping Icon">
-                <h3>Free Shipping</h3>
-                <p>Orders over $140</p>
-            </div>
-            <div class="feature-card">
-                <img src="./images/paymentIcon.png" alt="Payment Icon">
-                <h3>Quick Payment</h3>
-                <p>100% secure payment</p>
-            </div>
-            <div class="feature-card">
-                <img src="./images/promoIcon.png" alt="Promo Icon">
-                <h3>Special Promo</h3>
-                <p>Get special promo</p>
-            </div>
-            <div class="feature-card">
-                <i class="fa-solid fa-headphones" style="color: #36d416;"></i>
-                <h3>24/7 Support</h3>
-                <p>Ready support</p>
-            </div>
-       </section>
+    </section>
 
+    <section class="features">
+      <div class="container">
+        <div class="features-border">
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img src="./images/shippingIcon.png" alt="Shipping Icon" />
+              </div>
+              <div>
+                <h3 class="feature-title">Free Shipping</h3>
+                <p class="feature-text">Orders over $140</p>
+              </div>
+            </div>
 
-       <!-- Features Section End -->
-    
-</body>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img src="./images/paymentIcon.png" alt="Payment Icon" />
+              </div>
+              <div>
+                <h3 class="feature-title">Quick Payment</h3>
+                <p class="feature-text">100% secure payment</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img src="./images/promoIcon.png" alt="Promo Icon" />
+              </div>
+              <div>
+                <h3 class="feature-title">Special Promo</h3>
+                <p class="feature-text">Get special promo</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-headphones"></i>
+              </div>
+              <div>
+                <h3 class="feature-title">24/7 Support</h3>
+                <p class="feature-text">Ready support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefit-stars">
+      <div class="container">
+        <div class="benefit-row">
+          <div class="benefit-image">
+            <div class="benefit-image-frame">
+              <img src="./images/image1.png" alt="Healthy food flatlay" />
+            </div>
+          </div>
+
+          <div class="benefit-content">
+            <span class="section-eyebrow">Our Benefit</span>
+            <h2 class="section-title">
+              The More Healthy<br />
+              Food The Better
+            </h2>
+
+            <ul class="benefit-list">
+              <li>
+                <span class="benefit-check">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <span>Be Alive With Veggie Food.</span>
+              </li>
+              <li>
+                <span class="benefit-check">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <span>It's The Place To Be.</span>
+              </li>
+              <li>
+                <span class="benefit-check">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <span>Nonstop Veggie Food</span>
+              </li>
+              <li>
+                <span class="benefit-check">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <span>The Best Silk Dish In Town</span>
+              </li>
+              <li>
+                <span class="benefit-check">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <span>Truffles, Egg &amp; Pumpkin Spice</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stars-row">
+          <div class="stars-content">
+            <span class="section-eyebrow">Our Stars</span>
+            <h2 class="section-title">
+              Veggie Food Goes<br />
+              On And Always On
+            </h2>
+
+            <div class="stars-metrics">
+              <div class="metric">
+                <div class="metric-number">1,500</div>
+                <div class="metric-label">Sold Product</div>
+              </div>
+              <div class="metric">
+                <div class="metric-number">500</div>
+                <div class="metric-label">Positive Feedback</div>
+              </div>
+              <div class="metric">
+                <div class="metric-number">400</div>
+                <div class="metric-label">Official Store</div>
+              </div>
+            </div>
+
+            <button class="btn-primary stars-button">
+              Get Special Promo
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="stars-image">
+            <div class="stars-image-frame">
+              <img src="./images/image1.png" alt="Green juice and fruits" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="variety">
+      <div class="container">
+        <div class="variety-header">
+          <div class="variety-pill">
+            <span class="variety-pill-text">Our Features</span>
+            <span class="variety-pill-icon">
+              <i class="fa-solid fa-seedling"></i>
+            </span>
+          </div>
+          <h2 class="section-title variety-title">Variety Of Foods</h2>
+        </div>
+
+        <div class="variety-grid-frame">
+          <div class="variety-grid">
+            <div class="variety-tile variety-tile--image">
+              <img src="./images/image8.png" alt="Veggie plate" />
+            </div>
+
+            <div class="variety-tile">
+              <div class="variety-card">
+                <h3 class="variety-card-title">Veggies Are Forever</h3>
+                <p class="variety-card-text">We offer the following services</p>
+                <button class="btn-small">
+                  Discover Now
+                  <span class="btn-icon">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="variety-tile variety-tile--image">
+              <img src="./images/image9.png" alt="Limes" />
+            </div>
+
+            <div class="variety-tile">
+              <div class="variety-card">
+                <h3 class="variety-card-title">Good For Your Skin</h3>
+                <p class="variety-card-text">We offer the following services</p>
+                <button class="btn-small">
+                  Discover Now
+                  <span class="btn-icon">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="variety-tile">
+              <div class="variety-card">
+                <h3 class="variety-card-title">Veggie Food Groove</h3>
+                <p class="variety-card-text">We offer the following services</p>
+                <button class="btn-small">
+                  Discover Now
+                  <span class="btn-icon">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="variety-tile variety-tile--image">
+              <img src="./images/image10.png" alt="Colorful veggies" />
+            </div>
+
+            <div class="variety-tile">
+              <div class="variety-card">
+                <h3 class="variety-card-title">That Comes Close</h3>
+                <p class="variety-card-text">We offer the following services</p>
+                <button class="btn-small">
+                  Discover Now
+                  <span class="btn-icon">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="variety-tile variety-tile--image">
+              <img src="./images/image10.png" alt="Green fruits" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular-products">
+      <div class="container">
+        <span class="section-eyebrow">Our Product</span>
+        <h2 class="section-title popular-title">Most Popular Product</h2>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image-circle">
+              <img src="./images/image7.png" alt="Summer Veganie" />
+            </div>
+            <h3 class="product-name">Summer Veganie</h3>
+
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="product-prices">
+              <span class="old-price">$25</span>
+              <span class="new-price">$29</span>
+            </div>
+
+            <button class="btn-outline">
+              Buy Now
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-circle">
+              <img src="./images/image6.png" alt="Greanie Seafood" />
+            </div>
+            <h3 class="product-name">Greanie Seafood</h3>
+
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="product-prices">
+              <span class="old-price">$25</span>
+              <span class="new-price">$29</span>
+            </div>
+
+            <button class="btn-outline">
+              Buy Now
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-circle">
+              <img src="./images/image5.png" alt="Fresh Vegetable" />
+            </div>
+            <h3 class="product-name">Fresh Vegetable</h3>
+
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="product-prices">
+              <span class="old-price">$25</span>
+              <span class="new-price">$29</span>
+            </div>
+
+            <button class="btn-outline">
+              Buy Now
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-circle">
+              <img src="./images/image4.png" alt="Fresh Meatyus" />
+            </div>
+            <h3 class="product-name">Fresh Meatyus</h3>
+
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="product-prices">
+              <span class="old-price">$25</span>
+              <span class="new-price">$29</span>
+            </div>
+
+            <button class="btn-outline">
+              Buy Now
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-overlay">
+            <h2 class="cta-title">
+              Veggie Foods? Ingredients<br />
+              You Want To Try
+            </h2>
+            <button class="btn-primary cta-btn">
+              Get Started
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-col footer-brand">
+          <h3 class="footer-logo">Foodies</h3>
+          <p class="footer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor
+          </p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">About Us</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Service Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Company</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">Partnership</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h4 class="footer-heading">Get in touch</h4>
+          <p class="footer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor
+          </p>
+          <form class="footer-form">
+            <input type="email" placeholder="Email" />
+            <button type="submit" class="footer-submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="footer-copy">Copyright © 2021 Foodies.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
